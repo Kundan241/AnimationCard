@@ -1,0 +1,130 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    perspective: 1000px;
+}
+.container
+{
+   
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+.card
+{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+  
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0px 20px 20px #131212, 0px 0px 50px #131212;
+    
+
+}
+.shoe{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+
+}
+
+.shoe img {
+    width :20rem;
+    z-index: 2;
+
+}
+.circle
+{
+    width: 15rem;
+    height: 15rem;
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(7, 6, 6, 0), rgb(191, 223, 10));
+    position: absolute;
+    border-radius: 50%;
+
+
+}
+.info  h1
+{
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+    
+}
+.info  h3
+{
+    font-size: 1.3rem;
+    padding: 2rem,0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+
+
+}
+.sizes
+{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+    
+
+}
+.sizes button{
+    padding: 0.5rem 2rem;
+    background: none;
+    border:none;
+    box-shadow: 0px 5px 10px 0px #888888;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+
+}
+.sizes button:hover{
+    background-color: #585858;
+    color:white;
+}
+button.active{
+
+    background-color: #585858;
+    color: aliceblue;
+}
+.buy
+{
+    margin-top:5rem ;
+    transition: all 0.75s ease-out;
+
+}
+.buy button
+{
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: #f54642;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+
+}
+.buy button:hover{
+    background-color: #585858;
+}
